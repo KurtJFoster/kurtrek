@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Kurtrek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#" id="pr01">PR-01</a></li>
+                <li><a href="#" id="cybertrailer">Cybertrailer</a></li>
+                <li><a href="#" id="technology">Technology</a></li>
+                <li><a href="#" id="blog">Blog</a></li>
+                <li><a href="#" id="support">Support</a></li>
+                <li><a href="#" id="opensource">openSource</a></li>
+            </ul>
+            <a href="#" class="btn">Login</a>
+        </nav>
+
+        <div class="info">
+            <div>
+                <h2>1.9 s</h2>
+                <p>60 mph</p>
+            </div>
+            <div>
+                <h2>200 mph</h2>
+                <p>Top Speed</p>
+            </div>
+            <div>
+                <h2>396 mi</h2>
+                <p>Max Range</p>
+            </div>
+            <div class="line">
+            </div>
+            <div>
+                <h2 id="pageInfoTitle">PR-01</h2>
+            </div>
+        </div>
+
+    </div>
+
+<script>
+
+    var header = document.getElementById("header");
+    var a1 = document.getElementById("pr01");
+    var a2 = document.getElementById("cybertrailer");
+    var a3 = document.getElementById("technology");
+    var a4 = document.getElementById("blog");
+    var a5 = document.getElementById("support");
+    var a6 = document.getElementById("opensource");
+    var pageInfoTitle = document.getElementById("pageInfoTitle");
+
+
+    a1.onclick = function () {
+        header.style.backgroundImage = "url(images/image-1.png)";
+        pageInfoTitle.innerHTML = "PR-01";
+    }
+    a2.onclick = function () {
+        header.style.backgroundImage = "url(images/image-2.png)";
+        pageInfoTitle.innerHTML = "Cybertrailer";
+    }
+    a3.onclick = function () {
+        header.style.backgroundImage = "url(images/image-3.png)";
+        pageInfoTitle.innerHTML = "Technology";
+    }
+    a4.onclick = function (){
+        header.style.backgroundImage = "url(images/image-4.png)";
+        pageInfoTitle.innerHTML = "Blog";
+    }
+    a5.onclick = function (){
+        header.style.backgroundImage = "url(images/image-5.png)";
+        pageInfoTitle.innerHTML = "Support";
+    }
+    a6.onclick = function (){
+        header.style.backgroundImage = "url(images/image-6.png)";
+        pageInfoTitle.innerHTML = "openSource";
+    }
+
+</script>
+
+</body>
+</html>
