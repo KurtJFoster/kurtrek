@@ -10,45 +10,60 @@
     width: 100%;
     height: 100vh;
     background-image: url(images/image-1.png);
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.65);
     background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
     padding: 0 7%;
-    transition: background-image 0.5s;
 }
-nav{
+nav {
     position: fixed;
     top: 30px;
-    left: 45;
+    left: 85px;
     width: 100%;
     display: flex;
     align-items: center;
 }
-.logo{
+.logo {
     cursor: pointer;
+    opacity: 0.5;
 }
-nav ul{
+.logo:hover {
+    opacity: 1.0;
+}
+nav ul {
     flex: 1;
     text-align: center;
 }
-nav ul li{
+nav ul li {
     display: inline-block;
     margin: 10px 20px;
 }
-nav ul li a{
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+/*Hover on Nav bar buttons dims a little*/
+nav ul li a:hover {
+    opacity: 0.9;
+}
+nav ul li b {
     text-decoration: none;
     color: #fff;
 }
 nav .btn {
     text-decoration: none;
     color: #fff;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     padding: 10px 30px;
     border-radius: 30px;
     margin-right: 13%
 }
-.info{
+/*Hover on Sign In button dims a little*/
+nav .btn:hover {
+    opacity: 0.9;
+}
+.info {
     width: 100%;
     padding: 0 7%;
     display: flex;
@@ -58,15 +73,76 @@ nav .btn {
     bottom: 50px;
     left: 0;
 }
-.info div{
+.info div {
     margin: 0 20px;
 }
-.info div h2{
-    font-size: 44px;
+.info div h2 {
+    font-size: 35px;
     font-weight: 400;
 }
-.info .line{
+.main-info {
+    position: fixed;
+    top: 23%;
+    left: 14%;
+    width: 66%;
+}
+.main-info h1 {
+    font-weight: 300;
+    animation: fadeIn 5s;
+    color: #fff;
+    align-items: center;
+}
+.main-info h3{
+    font-weight: 200;
+    animation: fadeIn 5s;
+    color: #fff;
+    align-items: center;
+}
+.main-info h4 {
+    font-weight: 200;
+    font-size: 18px;
+    animation: fadeIn 5s;
+    color: #fff;
+    align-items: center;
+    text-indent: 50px;
+}
+.main-info h5 {
+    font-weight: 200;
+    animation: fadeIn 5s;
+    color: #fff;
+    font-size: 15px;
+    align-items: center;
+    text-indent: 80px;
+}
+.info .line {
     flex: 1;
     background: #fff;
     height: 2px;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+a:link {
+    color: #BDBDBD;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #BDBDBD;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    background-color: transparent;
+    /*text-decoration: underline;*/
+}
+
+a:active {
+    color: lightgrey;
+    background-color: transparent;
+    /*text-decoration: underline;*/
 }

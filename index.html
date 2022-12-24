@@ -1,85 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <title>Kurtrek</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Favicon image line directly below -->
+    <link rel="icon" type="images/basicLowResLogo.png">
+
 </head>
 <body>
     <div class="header" id="header">
         <nav>
-            <img src="images/logo.png" class="logo">
+            <a href="https://kurtrek.com"><img src="images/new-logo.png" alt="logo image" class="logo"></a>
             <ul>
-                <li><a href="#" id="pr01">PR-01</a></li>
-                <li><a href="#" id="cybertrailer">Cybertrailer</a></li>
-                <li><a href="#" id="technology">Technology</a></li>
-                <li><a href="#" id="blog">Blog</a></li>
-                <li><a href="#" id="support">Support</a></li>
+                <li><a href="#" id="modelone">modelOne</a></li>
+                <li><a href="#" id="updates">Updates</a></li>
                 <li><a href="#" id="opensource">openSource</a></li>
             </ul>
-            <a href="#" class="btn">Login</a>
+            <a href="pages/signin.html" class="btn">Sign In</a>
         </nav>
-
-        <div class="info">
-            <div>
-                <h2>1.9 s</h2>
-                <p>60 mph</p>
-            </div>
-            <div>
-                <h2>200 mph</h2>
-                <p>Top Speed</p>
-            </div>
-            <div>
-                <h2>396 mi</h2>
-                <p>Max Range</p>
-            </div>
-            <div class="line">
-            </div>
-            <div>
-                <h2 id="pageInfoTitle">PR-01</h2>
-            </div>
+        <div class="main-info">
+            <h1>
+                We believe in a few things.
+            </h1>
+            <br />
+            <h3>
+                &#x2022 The ability to grow food, fully off-grid, <i>with minimal effort</i>.
+            </h3>
+            <h4>
+                &#x21B3; With the modelOne, it's finally possibile.
+            </h4>
+            <br />
+            <h3>
+                &#x2022 We support the <a href="https://www.repair.org/stand-up">Right to Repair</a>.
+            </h3>
+            <h4>
+                &#x21B3; Which means you as the customer, has fundamental rights:
+            </h4>
+            <h5>
+                &#x2014 We gurantee the repairability and replaceability of <b>all components</b> for our products.
+            </h5>
+            <h5>
+                &#x2014 We provide repair guides with mechanical/electrical drawings to assist you.
+            </h5>
+            <h5>
+                &#x2014 If self-repair isn't an option, <i>reasonable</i> repair fees will be applied.
+            </h5>
+            <h4><img src="images/product-image.png" class="logo"></h4>
         </div>
-
+    </div>
+    <div class="info">
+        <div>
+            <h2 id="pageInfoLargeLettersLeft">Price: Free*</h2>
+            <p id="pageInfoSmallLettersLeft">*With terms and conditions</p>
+        </div>
+        <div>
+            <h2 id="pageInfoLargeLettersCenter">Easy Setup</h2>
+            <p id="pageInfoSmallLettersCenter">Add power and material, done.</p>
+        </div>
+        <div>
+            <h2> </h2>
+            <p> </p>
+        </div>
+        <div id="lineDividerBottom" class="line">
+        </div>
+        <div>
+            <h2 id="pageInfoTitle">modelOne</h2>
+        </div>
     </div>
 
-<script>
+    <script>
+        var header = document.getElementById("header");
+        var a1 = document.getElementById("modelone");
+        var a2 = document.getElementById("updates");
+        var a3 = document.getElementById("opensource");
+        var a4 = document.getElementById("signinpage");
+        var pageInfoTitle = document.getElementById("pageInfoTitle");
+        var pageInfoLargeLettersLeft = document.getElementById("pageInfoLargeLettersLeft");
+        var pageInfoLargeLettersCenter = document.getElementById("pageInfoLargeLettersCenter");
+        var pageInfoSmallLettersLeft = document.getElementById("pageInfoSmallLettersLeft");
+        var pageInfoSmallLettersCenter = document.getElementById("pageInfoSmallLettersCenter");
 
-    var header = document.getElementById("header");
-    var a1 = document.getElementById("pr01");
-    var a2 = document.getElementById("cybertrailer");
-    var a3 = document.getElementById("technology");
-    var a4 = document.getElementById("blog");
-    var a5 = document.getElementById("support");
-    var a6 = document.getElementById("opensource");
-    var pageInfoTitle = document.getElementById("pageInfoTitle");
-
-
-    a1.onclick = function () {
-        header.style.backgroundImage = "url(images/image-1.png)";
-        pageInfoTitle.innerHTML = "PR-01";
-    }
-    a2.onclick = function () {
-        header.style.backgroundImage = "url(images/image-2.png)";
-        pageInfoTitle.innerHTML = "Cybertrailer";
-    }
-    a3.onclick = function () {
-        header.style.backgroundImage = "url(images/image-3.png)";
-        pageInfoTitle.innerHTML = "Technology";
-    }
-    a4.onclick = function (){
-        header.style.backgroundImage = "url(images/image-4.png)";
-        pageInfoTitle.innerHTML = "Blog";
-    }
-    a5.onclick = function (){
-        header.style.backgroundImage = "url(images/image-5.png)";
-        pageInfoTitle.innerHTML = "Support";
-    }
-    a6.onclick = function (){
-        header.style.backgroundImage = "url(images/image-6.png)";
-        pageInfoTitle.innerHTML = "openSource";
-    }
-
-</script>
+        a1.onclick = function () {
+            header.style.backgroundImage = "url(images/image-1.png)";
+            pageInfoTitle.innerHTML = "modelOne";
+            pageInfoLargeLettersLeft.innerHTML = "$*,***";
+            pageInfoLargeLettersCenter.innerHTML = "Easy Setup";
+            pageInfoSmallLettersLeft.innerHTML = "Small Letters Left";
+            pageInfoSmallLettersCenter.innerHTML = "Small Letters Center";
+        }
+        a2.onclick = function () {
+            header.style.backgroundImage = "url(images/image-4.png)";
+            pageInfoTitle.innerHTML = "Updates";
+            pageInfoLargeLettersLeft.innerHTML = "Large Text 1";
+            pageInfoLargeLettersCenter.innerHTML = "Large Text 2";
+            pageInfoSmallLettersLeft.innerHTML = "Small Letters Left";
+            pageInfoSmallLettersCenter.innerHTML = "Small Letters Center";
+        }
+        a3.onclick = function () {
+            header.style.backgroundImage = "url(images/image-6.png)";
+            pageInfoTitle.innerHTML = "openSource";
+            pageInfoLargeLettersLeft.innerHTML = "gitHub";
+            pageInfoLargeLettersCenter.innerHTML = "Code";
+            pageInfoSmallLettersLeft.innerHTML = "Small Letters Left";
+            pageInfoSmallLettersCenter.innerHTML = "Small Letters Center";
+        }
+    </script>
 
 </body>
 </html>
+
+<!-- Write your comments here -->
