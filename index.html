@@ -52,8 +52,8 @@
 
         .footer .btn {
             text-decoration: none;
-            color: white;
-            border: 2px solid white;
+            color: grey ;
+            border: 2px solid grey;
             padding: 4.5px 10px;
             border-radius: 30px;
             text-align: center;
@@ -112,6 +112,8 @@
             box-sizing: border-box;
             border-radius: 30px;
             font-size: 14px;
+            opacity: .65;
+            color: black;
         }
 
         input[type=password] {
@@ -121,6 +123,8 @@
             box-sizing: border-box;
             border-radius: 30px;
             font-size: 14px;
+            opacity: .65;
+            color: black;
         }
 
         .main-info div h5 .submitbtn {
@@ -175,13 +179,14 @@
             text-align: center;
         }
 
-            .footer div {
-                padding: 8px 8px;
-            }
+        .footer div {
+            padding: 8px 8px;
+        }
 
-            .footer h5 {
-                color: white;
-            }
+        .footer h5 {
+            color: white;
+        }
+
     </style>
 
 </head>
@@ -198,7 +203,7 @@
         </logo>
         <div>
             <h3>Sign In</h3>
-            <h4>To access your live cultivator dashboard.</h4>
+            <h4>To access your live dashboard</h4>
             <form>
                 <label for="fname"></label>
                 <input type="text" id="uname" name="uname" placeholder="Username, Email, Phone Number, or Cultivator ID">
@@ -209,15 +214,22 @@
                 <center><br /><a href="https://kurtrek.com" class="submitbtn"> &#x2192 </a></center>
             </h5>
             <h6>
-                <center><br /><a href="https://kurtrek.com">Forgot Username</a> | <a href="https://kurtrek.com">Forgot Email</a> | <a href="https://kurtrek.com">Forgot Password</a></center>
+                <center>
+                    <br />
+                        <a href="https://kurtrek.com">Forgot Username</a> |
+                        <a href="https://kurtrek.com">Forgot Email</a>
+                    <br />
+                        <a href="https://kurtrek.com">Forgot Password</a> |
+                        <a href="https://kurtrek.com">Create Account</a>
+                </center>
             </h6>
         </div>
     </div>
     <div class="footer">
-        <a href="https://kurtrek.com" class="btn"> &#x2715 </a>
+        <a href="pages/info.html" class="btn"> info </a>
         <div>
         </div>
-        <h5>Cancel</h5>
+        <!-- <h5> Cancel </h5> -->
     </div>
 
 
