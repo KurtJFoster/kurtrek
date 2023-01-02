@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .cat {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-image: url('cat.png');
+            animation: bounce 2s linear infinite;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-100px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cat"></div>
+</body>
+</html>
