@@ -1,150 +1,23 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html lang="en">
 <head>
-
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Create an Account</title>
-
     <style>
 
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-        * {
-            margin: 0;
+        body {
+            margin: 145px 0px;
             padding: 0;
-            box-sizing: border-box;
+            top: 10%;
+            background: linear-gradient(to right bottom, #757678, #616263, #4b4c4d, #323233, #232324, #141414, #232324, #323233, #4b4c4d, #616263, #757678);
             font-family: 'poppins', sans-serif;
         }
 
-        body {
-            background: linear-gradient(to right bottom, #757678, #616263, #4b4c4d, #323233, #232324, #141414, #232324, #323233, #4b4c4d, #616263, #757678);
-        }
-
-        .header {
+        .container {
+            margin: auto;
+            max-width: 600px;
+            position: flexible;
+            top: 10%;
             width: 100%;
-            height: 100vh;
-            background-blend-mode: multiply;
-            background-position: center;
-            background-size: cover;
-            padding: 0 7%;
-        }
-
-        nav {
-            position: fixed;
-            top: 30px;
-            left: 85px;
-            width: 100%;
-            display: flex;
-            align-items: center;
-        }
-
-        .logo {
-            cursor: pointer;
-        }
-
-        nav ul {
-            flex: 1;
-            text-align: center;
-        }
-
-            /*Hover on Nav bar buttons dims a little*/
-            nav ul li a:hover {
-                opacity: 0.7;
-            }
-
-        .footer .btn {
-            text-decoration: none;
-            color: grey ;
-            border: 2px solid grey;
-            padding: 4.5px 10px;
-            border-radius: 30px;
-            text-align: center;
-        }
-
-            /*Hover on Cancel button dims a little*/
-            .footer .btn:hover {
-                opacity: 0.5;
-            }
-
-        .info {
-            width: 100%;
-            padding: 0 7%;
-            display: flex;
-            align-items: center;
-            color: #fff;
-            position: fixed;
-            bottom: 50px;
-            left: 0;
-        }
-
-        .main-info {
-            position: fixed;
-            top: 20%;
-            left: 32.5%;
-            right: 32.5%;
-            width: 35%;
-        }
-
-            .main-info logo {
-                top: 10%;
-                display: block;
-                margin-left: 42%;
-                margin-right: 42%;
-                width: 100%;
-            }
-
-            .main-info div h3 {
-                font-size: 35px;
-                font-weight: 400;
-                color: #fff;
-            }
-
-            .main-info div h4 {
-                font-size: 14px;
-                font-weight: 250;
-                color: #E6E6E6;
-            }
-
-        input[type=text] {
-            width: 49%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            box-sizing: border-box;
-            border-radius: 30px;
-            font-size: 14px;
-            opacity: .65;
-            color: black;
-        }
-
-        input[type=password] {
-            width: 49%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            box-sizing: border-box;
-            border-radius: 30px;
-            font-size: 14px;
-            opacity: .65;
-            color: black;
-        }
-
-        .main-info div h5 .submitbtn {
-            text-decoration: none;
-            color: #E6E6E6;
-            border: 2.5px solid #FAFAFA;
-            padding: 10px 3%;
-            box-sizing: border-box;
-            border-radius: 30px;
-            font-size: 15px;
-        }
-
-            .main-info div h5 .submitbtn:hover {
-                opacity: 0.5;
-            }
-
-        .main-info div h6 {
-            font-size: 14px;
-            font-weight: 250;
-            color: #E6E6E6;
         }
 
         a:link {
@@ -162,51 +35,61 @@
         a:hover {
             color: white;
             background-color: transparent;
-            /*text-decoration: underline;*/
         }
 
         a:active {
             color: lightgrey;
             background-color: transparent;
-            /*text-decoration: underline;*/
         }
 
-        .footer {
-            position: fixed;
-            bottom: 5%;
-            left: 10%;
-            right: 10%;
-            text-align: center;
+        input[type=text] {
+            width: 35%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 30px;
+            font-size: 14px;
+            opacity: .65;
+            color: black;
+            font-family: 'poppins', sans-serif;
         }
 
-        .footer div {
-            padding: 8px 8px;
+        input[type=password] {
+            width: 35%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 30px;
+            font-size: 14px;
+            opacity: .65;
+            color: black;
+            font-family: 'poppins', sans-serif;
         }
 
-        .footer h5 {
-            color: white;
+        .container h5 .submitbtn {
+            text-decoration: none;
+            color: #E6E6E6;
+            border: 2.5px solid #FAFAFA;
+            padding: 10px 3%;
+            box-sizing: border-box;
+            border-radius: 30px;
+            font-size: 15px;
+        }
+
+        .container h5 .submitbtn:hover {
+            opacity: 0.5;
         }
 
     </style>
-
 </head>
+
 <body>
-    <div class="header" id="header">
-        <nav>
-            <ul>
-            </ul>
-        </nav>
-    </div>
-    <div class="main-info">
-        <logo>
-            <a href="https://kurtrek.com"><img src="createAccount-images/new-logo-page-2.png" alt="logo image" class="logo"></a>
-        </logo>
-        <div>
-            <center>
-                <h3>Profile Builder</h3>
-                <h4>Make a new account by filling out this form</h4>
-            </center>
-            <form>
+    <div class="container">
+        <center><a href="https://kurtrek.com"><img src="createAccount-images/new-logo-page-2.png" alt="logo image" class="logo"></a></center>
+        <center><h3 style="margin: 7px; font-size: 35px; font-weight: 400; color: #fff; text-indent: 0px;">Profile Builder</h3></center>
+        <center><h4 style="margin: 1px; font-size: 14px; font-weight: 250; color: #E6E6E6; text-indent: 0px; ">Make a new account by filling out this form</h4></center>
+        <center>
+            <form style="margin: 1px;">
                 <label for="firstInput"></label>
                 <input type="text" id="fname" name="fname" placeholder="First Name">
                 <label for="secondInput"></label>
@@ -220,28 +103,22 @@
                 <label for="sixthInput"></label>
                 <input type="password" id="pswrd2" name="pswrd2" placeholder="Confirm Password">
             </form>
-            <h5>
-                <center><br /><a href="https://kurtrek.com" class="submitbtn"> Create Account </a></center>
-            </h5>
-            <br />
-            <h6>
-                <center>
-                    <a href="https://kurtrek.com" class="submitbtn"> Return to Sign In </a>
-                    <br />
-                </center>
+        </center>
+        <center>
+            <h6 style="margin: 1px; font-size: 14px; font-weight: 250; color: #E6E6E6; text-indent: 0px;">
+                <a href="https://kurtrek.com">Forgot Username</a> |
+                <a href="https://kurtrek.com">Forgot Email</a> |
+                <a href="https://kurtrek.com">Forgot Password</a>
+                <br />
             </h6>
-        </div>
+        </center>
+        <center>
+            <h5 style="margin: 1px;">
+                <br /><a href="https://kurtrek.com/pages/createAccount.html" class="submitbtn"> Create Account </a>
+            </h5>
+            <h6 style="margin:20px; font-size: 14px; font-weight: 250;">
+                <a style="margin: 1px;" href="https://kurtrek.com" class="btn"> Return to Sign In </a>
+            </h6>
+        </center>
     </div>
-    <div class="footer">
-        <!-- <a href="pages/info.html" class="btn"> ? </a>      Commented out info page button-->
-        <div>
-        </div>
-        <!-- <h5> Cancel </h5> -->
-    </div>
-
-
-
 </body>
-</html>
-
-<!-- Write your comments here -->
