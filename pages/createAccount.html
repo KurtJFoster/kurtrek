@@ -151,7 +151,7 @@
                             document.getElementById("pswrdNoMatch").style.display = "block";
                             setTimeout(function () {
                                 document.getElementById("pswrdNoMatch").style.display = "none";
-                            }, 4000);
+                            }, 5000);
 
                         } else {
                             // Or else passwords match, do this:
@@ -171,10 +171,10 @@
                                 }
 
                                 if (!hasUppercase || !hasLowercase || !hasNumber) {
-                                    passwordMessage = "Password must contain at least one uppercase letter, one lowercase letter, and one number.";
+                                    passwordMessage = 'Password must contain at least one uppercase letter, <br> one lowercase letter, and one number.';
                                 } else {
                                     passwordMessage = "Password is valid.";
-                                    document.getElementById("pswrdYesMatch").innerHTML = "Passwords Match, but there's some things missing:";
+                                    document.getElementById("pswrdYesMatch").innerHTML = "Passwords Match, but there's something missing:";
                                 }
                             }
 
