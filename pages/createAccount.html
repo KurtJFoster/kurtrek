@@ -2,6 +2,10 @@
 
     Here are some tips for writing an extremely strong password checker in HTML:
 
+---DONE---
+0. Check that the passwords match for checking twice. Possibly with a image check mark.
+
+---NEED TO DO---
 1. Use regular expressions to ensure that the password meets certain requirements,
    such as containing at least one uppercase letter, one lowercase letter, and one number.
 2. Implement a "strength meter" that gives the user feedback on how strong their password
@@ -95,6 +99,7 @@
             box-sizing: border-box;
             border-radius: 30px;
             font-size: 15px;
+            cursor: pointer;
         }
 
             .container h5 .submitbtn:hover {
@@ -107,41 +112,93 @@
     <div class="container">
         <center><a href="https://kurtrek.com"><img src="createAccount-images/new-logo-page-2.png" alt="logo image" class="logo"></a></center>
         <center><h3 style="margin: 7px; font-size: 35px; font-weight: 400; color: #fff; text-indent: 0px;">Profile Builder</h3></center>
-        <center><h4 style="margin: 1px; font-size: 14px; font-weight: 250; color: #E6E6E6; text-indent: 0px; ">Make a new account by filling out this form</h4></center>
+        <center><h4 style="margin: 1px; font-size: 14px; font-weight: 250; color: #E6E6E6; text-indent: 0px; ">Make a new account (*Required fields)</h4></center>
+
         <center>
             <form style="margin: 1px;">
                 <label for="firstInput"></label>
-                <input type="text" id="fname" name="fname" placeholder="First Name">
+                <input type="text" id="fname" name="fname" placeholder="First Name*">
                 <label for="secondInput"></label>
                 <input type="text" id="lname" name="lname" placeholder="Last Name">
                 <label for="thirdInput"></label>
-                <input type="text" id="email" name="email" placeholder="Email">
+                <input type="text" id="email" name="email" placeholder="Email*">
                 <label for="fourthInput"></label>
-                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
+                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number*">
                 <label for="fifthInput"></label>
-                <input type="password" id="pswrd1" name="pswrd1" placeholder="Create Password">
+                <input type="password" id="pswrd1" name="pswrd1" placeholder="Create Password*">
                 <label for="sixthInput"></label>
-                <input type="password" id="pswrd2" name="pswrd2" placeholder="Confirm Password">
+                <input type="password" id="pswrd2" name="pswrd2" placeholder="Confirm Password*">
             </form>
         </center>
         <center>
             <h5 style="margin: 1px;">
-                <br /><a href="https://kurtrek.com/pages/createAccount.html" class="submitbtn" value="Submit" onclick="checkPassword()"> Create Account </a>
+
+                <br /><a class="submitbtn" value="Submit" onclick="checkPassword()"> Create Account </a>
+
+                <script>function checkPassword() {
+
+                        var pswrd1 = document.getElementById("pswrd1").value;
+                        var pswrd2 = document.getElementById("pswrd2").value;
+                        var passwordMessage = "";
+                        var hasUppercase = false;
+                        var hasLowercase = false;
+                        var hasNumber = false;
+
+                        if (pswrd1 != pswrd2) {
+                            // If above is true, so passwords don't match, do this:
+                            document.getElementById("pswrdNoMatch").innerHTML = "Passwords Do Not Match, Please Try Again.";
+
+                            document.getElementById("pswrdNoMatch").style.display = "block";
+                            setTimeout(function () {
+                                document.getElementById("pswrdNoMatch").style.display = "none";
+                            }, 4000);
+
+                        } else {
+                            // Or else passwords match, do this:
+                            document.getElementById("pswrdYesMatch").innerHTML = "Passwords Match, but there's some things missing:";
+
+                            if (pswrd2.length < 8) {
+                                passwordMessage = "Password must be at least 8 characters long.";
+                            } else {
+                                for (var i = 0; i < pswrd2.length; i++) {
+                                    if (pswrd2[i] >= "A" && pswrd2[i] <= "Z") {
+                                        hasUppercase = true;
+                                    } else if (pswrd2[i] >= "a" && pswrd2[i] <= "z") {
+                                        hasLowercase = true;
+                                    } else if (pswrd2[i] >= "0" && pswrd2[i] <= "9") {
+                                        hasNumber = true;
+                                    }
+                                }
+
+                                if (!hasUppercase || !hasLowercase || !hasNumber) {
+                                    passwordMessage = "Password must contain at least one uppercase letter, one lowercase letter, and one number.";
+                                } else {
+                                    passwordMessage = "Password is valid.";
+                                    document.getElementById("pswrdYesMatch").innerHTML = "Passwords Match, but there's some things missing:";
+                                }
+                            }
+
+                            document.getElementById("passwordMessage").innerHTML = passwordMessage;
+
+                        }
+                    }</script>
+
             </h5>
-            <h6 style="margin:20px; font-size: 14px; font-weight: 250;">
+            <h6 style="margin:20px 0px 5px; font-size: 14px; font-weight: 250;">
+
                 <a style="margin: 1px;" href="https://kurtrek.com" class="btn"> Return to Sign In </a>
+
+                <h6 id="pswrdNoMatch" style="margin: 1px; color: #f76a65; font-size: 14px; font-weight: 250;">
+                    <a style="margin: 1px;"> <!-- "Passwords Don't Match!" --> </a>
+                </h6>
+                <h6 id="pswrdYesMatch" style="margin: 1px; color: #59eb2d; font-size: 14px; font-weight: 250; ">
+                    <a style="margin: 1px;"> <!-- "Passwords Match!" --> </a>
+                </h6>
+                <h6 id="passwordMessage" style="margin: 1px; color: #f05c51; font-size: 14px; font-weight: 250;">
+                    <a style="margin: 1px;"> <!-- "Password Length/Uniqueness Security Checker" --> </a>
+                </h6>
+
             </h6>
-            <script>
-                function checkPassword() {
-                    var pswrd1 = document.getElementById("pswrd1").value;
-                    var pswrd2 = document.getElementById("pswrd2").value;
-                    if (pswrd1 != pswrd1) {
-                        alert("Passwords do not match!");
-                    } else {
-                        // passwords match, do something
-                    }
-                }
-            </script>
         </center>
     </div>
 </body>
