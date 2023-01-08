@@ -144,6 +144,8 @@
                         var hasLowercase = false;
                         var hasNumber = false;
 
+
+
                         if (pswrd1 != pswrd2) {
                             // If above is true, so passwords don't match, do this:
                             document.getElementById("pswrdNoMatch").innerHTML = "Passwords Do Not Match, Please Try Again.";
@@ -167,18 +169,18 @@
                                         hasLowercase = true;
                                     } else if (pswrd2[i] >= "0" && pswrd2[i] <= "9") {
                                         hasNumber = true;
-                                    }
-                                }
+                                    } 
 
                                 if (!hasUppercase || !hasLowercase || !hasNumber) {
-                                    passwordMessage = 'Password must contain at least one uppercase letter, <br> one lowercase letter, and one number.';
+                                    passwordMessage = 'Password must contain at least one uppercase letter, <br> one lowercase letter, one number,.';
                                 } else {
                                     passwordMessage = "Password is valid.";
                                     document.getElementById("pswrdYesMatch").innerHTML = "Passwords Match, but there's something missing:";
                                 }
-                            }
 
-                            document.getElementById("passwordMessage").innerHTML = passwordMessage;
+                                    document.getElementById("passwordMessage").innerHTML = passwordMessage;
+
+                            }
 
                         }
                     }</script>
