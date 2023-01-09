@@ -25,6 +25,7 @@
 
 <!DOCTYPE html lang="en">
 <head>
+    <title>Create Account</title>
     <style>
 
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
@@ -159,7 +160,7 @@
                             // Or else passwords match, do this:
                             document.getElementById("pswrdYesMatch").innerHTML = "Passwords Match, but there's some things missing:";
 
-                            if (pswrd2.length < 8) {
+                            if (pswrd2.length < 20) {
                                 passwordMessage = "Password must be at least 8 characters long.";
                             } else {
                                 for (var i = 0; i < pswrd2.length; i++) {
