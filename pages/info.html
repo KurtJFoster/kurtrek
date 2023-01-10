@@ -13,6 +13,7 @@
 
         body {
             font-family: 'poppins', sans-serif;
+            background-color: #333333;
         }
 
         /* Style the header */
@@ -20,11 +21,24 @@
             background-color: #666;
             color: white;
             padding: 10px;
-            text-align: left;
             font-size: 10px;
             color: grey;
             border-radius: 50px 50px 20px 20px;
         }
+
+            /* Create three equal columns that floats next to each other */
+            header .column {
+                float: left;
+                width: 33%;
+                padding: 10px;
+            }
+
+            /* Clear floats after the columns */
+            header .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
 
         /* Container for flexboxes */
         section {
@@ -48,20 +62,36 @@
                 padding: 0;
             }
 
+
+
         .headerButton .btn {
             text-decoration: none;
             color: #ccc;
             border: 2px solid #ccc;
             padding: 6px 13px;
             border-radius: 50px 50px 30px 30px;
-            text-align: center;
-            margin-left: 1.5%;
         }
 
             /*Hover on Cancel button dims a little*/
             .headerButton .btn:hover {
                 opacity: 0.5;
             }
+
+        .headerButton .change {
+            cursor: pointer;
+            text-align: right;
+            text-decoration: none;
+            color: #ccc;
+            border: 2px solid #ccc;
+            padding: 6px 13px;
+            border-radius: 50px 50px 30px 30px;
+        }
+
+            /*Hover on Cancel button dims a little*/
+            .headerButton .change:hover {
+                opacity: 0.5;
+            }
+
 
         .footerButton .footbtn {
             text-decoration: none;
@@ -90,6 +120,13 @@
             padding: 20px;
             border-radius: 0px 30px 30px 0px;
         }
+
+            /*Info on the color of background and text for dark mode*/
+
+            article .dark {
+                background-color: #666666;
+                color: #e6e6e6;
+            }
 
         a:visited {
             text-decoration: none;
@@ -135,15 +172,34 @@
                 border-radius: 15px 15px 15px 15px;
             }
     </style>
-    <body bgcolor=#333333>
 </head>
 <body>
 
+    <!-- Header buttons, one to return to the Sign In page, the other to toggle Night/Day mode -->
+
     <header>
-        <div class="headerButton">
-            <h2><a href="https://kurtrek.com" class="btn">Return to Sign In</a></h2>
+        <div class="row">
+            <div class="column">
+                <div class="headerButton">
+                    <h2>
+                        <a href="https://kurtrek.com" class="btn" style="margin-left: 1.5%;">Return to Sign In</a>
+                    </h2>
+                </div>
+            </div>
+            <div class="column">
+                <h2 style="color: #cfcfcf;"><center>CENTER TEXT</center></h2>
+            </div>
+            <div class="column">
+                <div class="headerButton">
+                    <h2>
+                        <span class="change">Night Mode</span>
+                    </h2>
+                </div>
+            </div>
         </div>
     </header>
+
+    <!-- Main text information, Nav is the left hand column of the screen, article is the right hand -->
 
     <section>
 
@@ -212,6 +268,22 @@
             <a href="https://www.mit.edu/~amini/LICENSE.md" target="_blank" class="footbtn"> &#x24B8 2023 Under MIT Licence</a>
         </div>
     </footer>
+
+    <!-- Script for changing the mode from Day to Night Toggle -->
+
+    <script>
+        $(".change").on("click", function () {
+            if ($("article").hasClass("dark")) {
+                    $("article").removeClass("dark");
+                    $(".change").text("Night Mode");
+            }
+            else {
+                    $("article").addClass("dark");
+                    $(".change").text("Day Mode");
+            }
+        });
+    </script>
+
 
 </body>
 </html>
