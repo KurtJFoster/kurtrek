@@ -137,11 +137,6 @@
             color: #d4cfcf;
         }
 
-
-
-        .darkContainer {
-        }
-
         a:visited {
             text-decoration: none;
             color: darkgrey;
@@ -173,7 +168,7 @@
             display: grid;
             grid-template-columns: auto auto auto auto auto;
             grid-gap: 7px;
-            background-color: #8f97a6;
+            background-color: #adb5c4;
             padding: 7px;
             border-radius: 15px 15px 15px 15px;
         }
@@ -185,6 +180,16 @@
                 font-size: 17px;
                 border-radius: 15px 15px 15px 15px;
             }
+
+        .darkContainer {
+            background-color: #4d5054;
+            color: #cccccc;
+        }
+
+            .darkContainer > div {
+                background-color: #2b2b2b
+            }
+
     </style>
 </head>
 <body>
@@ -299,9 +304,13 @@
                 $("nav").removeClass("darkNav");
                 $(".change").text("Night Mode");
             }
+            if ($(".grid-container").hasClass("darkContainer")) {
+                $(".grid-container").removeClass("darkContainer");
+            }
             else {
                 $("article").addClass("dark");
-                $("nav").addClass("darkNav")
+                $("nav").addClass("darkNav");
+                $(".grid-container").addClass("darkContainer");
                 $(".change").text("Day Mode");
             }
         });
