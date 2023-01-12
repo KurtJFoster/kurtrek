@@ -57,7 +57,8 @@
             -webkit-flex: 1;
             -ms-flex: 1;
             flex: 1;
-            background: #ccc;
+            background: #403f3f;
+            color: #ccc;
             padding: 20px;
             border-radius: 30px 0px 0px 30px;
         }
@@ -68,10 +69,10 @@
                 padding: 0;
             }
 
-        /*Settings for Night Mode for the Navigation*/
-        .darkNav {
-            background-color: #403f3f;
-            color: #cccccc;
+        /*Settings for Day Mode for the Navigation*/
+        .dayNav {
+            background-color: #ccc;
+            color: #403f3f;
         }
 
         .headerButton .btn {
@@ -125,16 +126,17 @@
             -webkit-flex: 3;
             -ms-flex: 3;
             flex: 3;
-            background-color: #f1f1f1;
+            background-color: #1f1f1f;
+            color: #c9c7c7;
             padding: 20px;
             border-radius: 0px 30px 30px 0px;
         }
 
-        /*Info on the color of background and text for dark mode*/
+        /*Info on the color of background and text for day mode*/
 
-        .dark {
-            background-color: #1f1f1f;
-            color: #d4cfcf;
+        .day {
+            background-color: #f1f1f1;
+            color: #1f1f1f;
         }
 
         a:visited {
@@ -164,30 +166,40 @@
             }
         }
 
+
+        /* This container is for listing reasons for why the app exists and what it helps with */
+        .grid-containerList {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 15px;
+            padding: 15px;
+        }
+
+        /* This container is for the major items at a glance boxes 5 rows wide */
         .grid-container {
             display: grid;
             grid-template-columns: auto auto auto auto auto;
             grid-gap: 7px;
-            background-color: #adb5c4;
+            background-color: #4d5054;
             padding: 7px;
             border-radius: 15px 15px 15px 15px;
         }
 
             .grid-container > div {
-                background-color: rgba(255, 255, 255, 0.8);
+                background-color: #2b2b2b;
                 text-align: center;
                 padding: 16px 0;
                 font-size: 17px;
                 border-radius: 15px 15px 15px 15px;
             }
 
-        .darkContainer {
-            background-color: #4d5054;
-            color: #cccccc;
+        .dayContainer {
+            background-color: #adb5c4;
+            color: #4d5054;
         }
 
-            .darkContainer > div {
-                background-color: #2b2b2b;
+            .dayContainer > div {
+                background-color: rgba(255, 255, 255, 0.8);
             }
 
     </style>
@@ -211,7 +223,7 @@
             <div class="column">
                 <div class="headerButton">
                     <h2>
-                        <span class="change">Night Mode</span>
+                        <span class="change">Day Mode</span> <!-- Changing to default be "Day Mode", from night mode -->
                     </h2>
                 </div>
             </div>
@@ -244,7 +256,27 @@
             <p>In fact this technology has existed for quite some time, so it's not like we're inventing anything new. We just wrap the technology in a fast, safer, visually practical package.</p>
             <p>Simply have your login information at the ready, and sign in from any computer with an internet connection. You will then see an overview of your DIY system, your other equipment, or possibly an item designed and built by us. Usually each item will have relevant stats, messages, information, and updates at a high level.</p>
             <p>At the lower level, real-time updates from these systems, with customized interfaces to your choosing.</p>
-            <p>There are many reasons for this. First of all, building integrated apps to smartphones can be expensive, and honestly kind of a waste of time, which is why we decided to build a fully integrated web app that is as cheap as possible. Secondly, let's say you purchased a new robot that did a task, like made burgers or something. It came with a free app, but it cost $700 USD, and had horrible customer service. When the burger machine broke down, you had to send it back for repairs, or just simply get a refund. In this situation, we feel because off-grid technology merits a strength, it only adds to a trully decentralized economy. The sign in page allows anyone, anywhere, to login and access their off-grid systems. The best part about it is that you can start building your system today, for free, just create a new account from the sign in page. If you aren't quite sure what this is yet, that's okay, we will try to explain it in the following paragraphs. But for now, just know that we aren't selling a product, and we aren't a corporation.</p>
+            <p>There are many reasons for this.</p>
+            <div class="grid-containerList">
+
+
+
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+                <li>List Item 3</li>
+                <li>List Item 1</li>
+
+
+
+
+
+            </div>
+
+            First of all, we believe ,building integrated apps to smartphones can be expensive, and honestly kind of a waste of time, which is why we decided to build a fully integrated web app that is as cheap as possible. Secondly, let's say you purchased a new robot that did a task, like made burgers or something. It came with a free app, but it cost $700 USD, and had horrible customer service. When the burger machine broke down, you had to send it back for repairs, or just simply get a refund. In this situation, we feel because off-grid technology merits a strength, it only adds to a trully decentralized economy. The sign in page allows anyone, anywhere, to login and access their off-grid systems. The best part about it is that you can start building your system today, for free, just create a new account from the sign in page. If you aren't quite sure what this is yet, that's okay, we will try to explain it in the following paragraphs. But for now, just know that we aren't selling a product, and we aren't a corporation.</p>
 
             <h1>So What's The Solution?</h1>
             <p>It's a hard pill to swallow. So here it is... In terms of living within the bounds of what the planet requires, and to live comfortablly while also feeling like it's the 21st century, the solution is:</p>
@@ -301,21 +333,21 @@
 
     <script>
         $(".change").on("click", function () {
-            if ($("article").hasClass("dark")) {
-                $("article").removeClass("dark");
+            if ($("article").hasClass("day")) {
+                $("article").removeClass("day");
             }
-            if ($("nav").hasClass("darkNav")) {
-                $("nav").removeClass("darkNav");
-                $(".change").text("Night Mode");
+            if ($("nav").hasClass("dayNav")) {
+                $("nav").removeClass("dayNav");
+                $(".change").text("Day Mode");
             }
-            if ($(".grid-container").hasClass("darkContainer")) {
-                $(".grid-container").removeClass("darkContainer");
+            if ($(".grid-container").hasClass("dayContainer")) {
+                $(".grid-container").removeClass("dayContainer");
             }
             else {
-                $("article").addClass("dark");
-                $("nav").addClass("darkNav");
-                $(".grid-container").addClass("darkContainer");
-                $(".change").text("Day Mode");
+                $("article").addClass("day");
+                $("nav").addClass("dayNav");
+                $(".grid-container").addClass("dayContainer");
+                $(".change").text("Night Mode");
             }
         });
     </script>
