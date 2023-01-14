@@ -207,6 +207,55 @@
                 color: black;
             }
 
+
+        /*Accordian for detailed descriptions*/
+
+
+        .accordion {
+            background-color: #535454;
+            border-radius: 15px 15px 15px 15px;
+            color: #c9c7c7;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+            opacity: 1;
+        }
+
+            .active, .accordion:hover {
+                background-color: #616362;
+            }
+
+            /*Makes title of accordian go flat on bottom after click*/
+            .active, .accordion:after {
+                border-radius: 15px 15px 0px 0px;
+            }
+
+            .accordion:after {
+                content: '\002B';
+                color: #777;
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+            }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: #727373;
+            border-radius: 0px 0px 15px 15px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+
     </style>
 </head>
 <body>
@@ -226,7 +275,7 @@
             <div class="column">
                 <center>
                     <a href="https://kurtrek.com">
-                        <img src="info-images/plantImage.png" alt="Logo Did Not Show">
+                        <img src="info-images/plantImage.png" alt="Logo">
                     </a>
                 </center>
             </div>
@@ -260,30 +309,131 @@
             <h1 style="font-size: 35px;">Promoting Self-Sufficiency at the Individual Level</h1>
             <h1>We value time, so let's get started.</h1>
             <p>The attainment of self-sufficiency at the individual level represents a significant step towards the cultivation of autonomy and self-reliance, fostering personal growth and empowerment.</p>
-            <p>Through the use of self-sufficent systems, we promote environmental consciousness at the person to person level, which is a crucial step towards building a sustainable society.</p>
+            <p>Through the use of self-sufficent systems, we promote environmental consciousness at the independent level, which is a crucial step towards building a sustainable society.</p>
 
             <br />
             <hr style="height:2px;border-width:0px;color:gray;background-color:gray">
             <br />
 
-            <p><b><a href="https://kurtrek.com" style="text-decoration: none; color: white;">Kurtrek.com</a></b> is your go-to destination for swift, secure, and confidential access to your autonomous systems.</p>
+            <p>We're revolutionizing sustainable living: one system, self-reliant, affordable.</p>
+            <h1>The Sign In Webpage Acts as a Portal to Your Unique Self-Sufficienct Modules.</h1>
+
+            <p><b><a href="https://kurtrek.com" style="text-decoration: none;">Kurtrek.com</a></b> is your go-to destination for swift, secure, and confidential access to your autonomous systems.</p>
+
+            <br />
+            <hr style="height:2px;border-width:0px;color:gray;background-color:gray">
+            <br />
+
             <p>How can we be environmentally concious, and enjoy the quality of life provided by our modern society?</p>
+            <p>The answer lay in utilizing current technologies to fit specific (albeit tough) requirements:</p>
+
+            <div class="grid-containerList">
+
+                <div>
+                    <button class="accordion">Energy Efficiency</button>
+                    <div class="panel">
+                        <p>Maximizing energy efficiency to minimize costs and reduce environmental impact.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="accordion">Transportation</button>
+                    <div class="panel">
+                        <p>Incorporating sustainable transportation options to reduce dependence on fossil fuels.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="accordion">Self-Sufficiency</button>
+                    <div class="panel">
+                        <p>Being able to produce and recycle resources such as water and waste within the system.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="accordion">Community Building</button>
+                    <div class="panel">
+                        <p>Creating a sense of community and social connectedness among residents.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="accordion">Flexibility</button>
+                    <div class="panel">
+                        <p>Being able to adapt and evolve with changing needs and technologies.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="accordion">Health and Safety</button>
+                    <div class="panel">
+                        <p>Incorporating features to promote the physical and mental well-being of residents.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="accordion">Durability</button>
+                    <div class="panel">
+                        <p>Designing the system to withstand extreme weather conditions and natural disasters.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="accordion">Smart Technology</button>
+                    <div class="panel">
+                        <p>Incorporating smart technology and automation to improve efficiency and convenience.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="accordion">Access to Nature</button>
+                    <div class="panel">
+                        <p>Incorporating green spaces and natural elements to enhance the overall quality of life.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="accordion">Education and Research</button>
+                    <div class="panel">
+                        <p>Using the system as a platform for education and research on sustainable living.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="accordion">Zero-waste</button>
+                    <div class="panel">
+                        <p>Implementing waste reduction and recycling systems to minimize waste and pollution.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="accordion">Renewable Energy</button>
+                    <div class="panel">
+                        <p>Utilizing renewable energy sources such as solar, wind, and hydro power.</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.maxHeight) {
+                            panel.style.maxHeight = null;
+                        } else {
+                            panel.style.maxHeight = panel.scrollHeight + "px";
+                        }
+                    });
+                }
+            </script>
+
+
+            <p style="font-size: 20px;">Our Goal is to Attain All of These in One System</p>
+
+            <p>Now we know what you're thinking, having all of this in one system is expensive! It's certainly not cheap, especially when purchasing the system outright. Some systems on the market that achieve a fraction of this, cost in the hundreds of thousands, if not millions of dollars, vastly more than the average price of a home in America.</p>
+            <p>Imagine a revolution in home ownership, where the cost to live off-grid and self-reliant is a fraction of the traditional home.</p>
+            <p>With our cutting-edge technology, we bring the cost of sustainable living to the masses, making it accessible and affordable for everyone.</p>
+            <p>Now if this is to become mainstream, the cost will need to be at least <b style="font-size: 17px">10X</b> cheaper than the average home. Let's say, as of this writing, the average home cost is $350,000. That means this system needs to be around <b style="font-size: 17px">$35,000</b> to be accepted into mainstream at a rapid rate.</p>
+
             <p>In fact this technology has existed for quite some time, so it's not like we're inventing anything new. We just wrap the technology in a fast, safer, visually practical package.</p>
             <p>Simply have your login information at the ready, and sign in from any computer with an internet connection. You will then see an overview of your DIY system, your other equipment, or possibly an item designed and built by us. Usually each item will have relevant stats, messages, information, and updates at a high level.</p>
             <p>At the lower level, real-time updates from these systems, with customized interfaces to your choosing.</p>
             <p>There are many reasons for this.</p>
-            <div class="grid-containerList">
-
-                <li>An Upgraded Cultivator</li>
-                <li>All Electric Power</li>
-                <li>List Item 1</li>
-                <li>List Item 1</li>
-                <li>List Item 2</li>
-                <li>List Item 3</li>
-                <li>List Item 3</li>
-                <li>List Item 1</li>
-
-            </div>
 
             <h1>No More Trash</h1>
 
@@ -363,6 +513,7 @@
     <!-- Script for changing the mode from Day to Night Toggle -->
 
     <script>
+
         $(".change").on("click", function () {
             if ($("article").hasClass("day")) {
                 $("article").removeClass("day");
@@ -381,6 +532,7 @@
                 $(".change").text("Night");
             }
         });
+
     </script>
 
 
