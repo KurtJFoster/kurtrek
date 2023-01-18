@@ -265,6 +265,19 @@
             transition: max-height 0.2s ease-out;
         }
 
+        .tableOfContentsButton .change {
+            cursor: pointer;
+            text-decoration: none;
+            color: #919191;
+            padding: 6px 13px;
+            border-radius: 50px 50px 30px 30px;
+        }
+
+            /*Hover on button dims a little*/
+            .tableOfContentsButton .change:hover {
+                opacity: 0.5;
+            }
+
     </style>
 </head>
 <body>
@@ -303,6 +316,30 @@
             <h1>Our Mission</h1>
             <p>Decentralized off-grid technology for sustainable living, in harmony with society and the environment.</p>
             <p>Provide free open-source wiring diagrams, assembly instructions, and cost-effective, reliable and repairable designs to achieve sustainable living.</p>
+            </br>
+
+            <h1>Table of Contents</h1>
+            <!--Buttons similar to day/night button-->
+            <div class="tableOfContentsButton">
+
+                <ul>
+
+                    <li>
+                        <span class="change">We're Revolutionizing Sustainable Living</span>
+                    </li>
+                    <li>
+                        <span class="change">Content Title 2</span>
+                    </li>
+                    <li>
+                        <span class="change">Content Title 3</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            </br>
             </br>
             <center><img src="info-images/angularShot.png" alt="Cultivator Picture Did Not Show"></center>
             <p><center><i>fig. 1, Isometric View, Cultivator</i></center></p>
