@@ -6,7 +6,8 @@
 ### Home Page: [kurtrek.com](https://kurtrek.com/ "Heading link")
 
 
-### Welcome
+
+## Welcome
 
 TL;DR: Build an automated hydroponics system using my open source wiring diagrams and hardware. Access your system anywhere in the world securely simply by connecting your device to the internet and logging in through the kurtrek.com dashboard.
 
