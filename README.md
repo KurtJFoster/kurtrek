@@ -11,22 +11,21 @@
 
 TL;DR: Build an automated hydroponics system using my open source wiring diagrams and hardware. Access your system anywhere in the world securely simply by connecting your device to the internet and logging in through the kurtrek.com dashboard.
 
-Hello,
-
-This project is still a work in progress, so please bare with me in case you encounter any issues with the website. 
-Our webpage, "kurtrek.com" is the current home for the soon-to-be fully functional web based application which 
-allows the direct login from any where in the world into the "birds eye" view of the modelOne cultivator. Much in 
-the same way an individual accesses their smart home apps through their smartphone. The modelOne is engineered to 
-automatically grow a variety of plants utilizing hydroponics and is designed to be as energy efficent and reliable 
-for the device footprint. We are still working through some major design decisions (prototypes are still in 
-construction/testing) for modelOne itself and the website. Please stay tuned for updates.
-
-If you have any questions, comments or concerns, please message the owner directly at 
-the following email: fostkurt@gmail.com.
-
-_Thank you._
+## Mission
 
 #### "Accelerating the advent of sustainable, decentralized, automated farming"
+
+## Incentives
+
+There are endless incentives for building an automated hydroponic machine. It's a project that combines biology, sustainability, and technology into one cohesive framework. Imagine growing food all year round, hastle free, and have it be fun!
+
+## Contact
+
+_If you have any questions, comments or concerns, please message the owner directly at 
+the following email:_ fostkurt@gmail.com
+
+_**Thank you.**_
+
 
 ## Our Ideals
 
