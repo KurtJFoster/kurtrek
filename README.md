@@ -1,6 +1,6 @@
 
 # Open Source Hydroponics Builder
--------------
+
 ###### Built by [Kurt J. Foster](https://kfost.com/ "Heading link")
 
 
