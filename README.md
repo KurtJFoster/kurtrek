@@ -7,8 +7,11 @@
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg)
 
 #### Home Page: [kurtrek.com](https://kurtrek.com/ "Heading link")
--------------
 
+
+### Welcome
+
+TL;DR: Build an automated hydroponics system using my open source wiring diagrams and hardware. Access your system anywhere in the world securely simply by connecting your device to the internet and logging in through the kurtrek.com dashboard.
 
 Hello,
 
