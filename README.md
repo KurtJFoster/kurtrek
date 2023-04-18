@@ -1,5 +1,5 @@
 
-# :herb:Open Source Hydroponics Builder:seedling:
+# :herb: Open Source Hydroponics Builder :evergreen_tree:
 
 #### Built by [Kurt J. Foster](https://kfost.com/ "Heading link")
 
