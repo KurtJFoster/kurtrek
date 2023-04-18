@@ -9,7 +9,9 @@
 
 ## Welcome
 
-TL;DR: Build an automated hydroponics system using my open source wiring diagrams and hardware. Access your system anywhere in the world securely simply by connecting your device to the internet and logging in through the kurtrek.com dashboard.
+_TL;DR:_ This is a how-to on building a custom semi-automated hydroponics system. It's completely open sourced with full documentation from wiring diagrams to software troubleshooting. If desired, I've also designed into the overall process so as to allow instant access to your custom system anywhere in the world, from nearly any device.
+
+We live in an age where instant communication is a 
 
 ## Mission
 
