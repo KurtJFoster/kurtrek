@@ -1,4 +1,14 @@
-# kurtrek
+
+Open Source Hydroponics Builder
+-------------
+######Built by [Kurt J. Foster](https://kfost.com/ "Heading link")
+
+
+![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg)
+
+####Home Page: [kurtrek.com](https://kurtrek.com/ "Heading link")
+-------------
+
 
 Hello,
 
