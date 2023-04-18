@@ -1,8 +1,8 @@
 # kurtrek
 
-Greetings fellow internet traveler,
+Hello,
 
-This project is still a work in progress, so please bare with us in case you encounter any issues with our website. 
+This project is still a work in progress, so please bare with me in case you encounter any issues with the website. 
 Our webpage, "kurtrek.com" is the current home for the soon-to-be fully functional web based application which 
 allows the direct login from any where in the world into the "birds eye" view of the modelOne cultivator. Much in 
 the same way an individual accesses their smart home apps through their smartphone. The modelOne is engineered to 
