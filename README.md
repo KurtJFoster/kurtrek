@@ -1,10 +1,7 @@
 
 # :herb: Open Source Hydroponics Builder :evergreen_tree:
 
-#### Built by [Kurt J. Foster](https://kfost.com/ "Heading link")
-
-### Home Page: [kurtrek.com](https://kurtrek.com/ "Heading link")
-
+#### Created by [Kurt J. Foster](https://kfost.com/ "Heading link") #### Home Page: [kurtrek.com](https://kurtrek.com/ "Heading link")
 
 
 ## Welcome
