@@ -67,5 +67,5 @@ There are monumental resources at your disposal. From simple how-to's online to 
 
 ### Books
 
-> #### [Hydroponic Food Production]([https://github.com/hydroponics-project1](https://www.powells.com/book/hydroponic-food-production-9781439878675) by Howward M. Resh. This book provides an industrial perspective on mass production of hydroponic farms.
+> #### A good textbook is [Hydroponic Food Production](https://www.powells.com/book/hydroponic-food-production-9781439878675) by Howard M. Resh. It provides a high level industrial perspective on mass production of hydroponic farms. Introduces the reader into the chemistry behind nutrient dosing, and brings up important aspects of controling problems that might arise during the lifetime of the plant.
 
