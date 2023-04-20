@@ -1,8 +1,18 @@
 
 # :herb: Custom Open Source Hydroponics :evergreen_tree:
 
-> #### Created by: [Kurt J. Foster](https://kfost.com/ "Heading link")
+> #### Created by: [KurtJFoster](https://kfost.com/ "Heading link")
 > #### Home page: [kurtrek.com](https://kurtrek.com/ "Heading link")
+
+First of all, thank you for visiting this repository! To be fair, I had no idea this project was going to become what it is today. Complex ideas tend to take a life of their own, and at times when it seems the most chaotic, it usually means that's when the idea is most alive. But when you're in it, working on it, it feels like hitting the ground over and over, expecting something to happen. Luckily, I kept on wacking!
+
+My idea for this was initiated in early 2018, and due to funding drawbacks and time constraints, my ability to create this was hampered by a lot of outside forces. However, those forces allowed me to make the best decision for this project: to open source it.
+
+## So What Is This?
+
+At its core, it's an open source framework for enabling safe, over-the-internet control, of an automated system. As you can tell from the title, I chose to automate a hydroponics machine. If you don't know what that is, it's essentially a robot that grows plants by running water through the plants roots. 
+
+Although I chose this type of device, you can choose literally whatever kind of thing you want to control. HOWEVER! I _highly recommend_ not controlling things that which are safety sensitive, such as parts of a moving vehicle, appliances in a home, security devices, and other devices which can cause serious harm if the possibility they got hacked. Please refer to the licence here.
 
 ## Introduction
 
