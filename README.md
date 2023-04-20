@@ -1,10 +1,18 @@
 
 # :herb: DIY Open-source Internet Connected Hydroponics :evergreen_tree:
 
-> #### Created by: [KurtJFoster](https://kfost.com/ "Heading link")
-> #### Home page: [kurtrek.com](https://kurtrek.com/ "Heading link")
+> #### Created By: [KurtJFoster](https://kfost.com/ "Heading link")
+> #### Docs Home Page: [Kurtrek.com](https://kurtrek.com/ "Heading link")
 
-First of all, thank you for visiting this repository! To get started with this project, visit kurtrek.com (link above) to jump in immediately.
+# 
+
+First of all, I want to thank you for visiting this repository!
+
+I have a sign in page [[Kurtrek.com/signin](https://kurtrek.com/signin "Heading link")] which allows you to track your project progress. No subscription needed!
+
+If you like what you see, don't forget to :star: this repo! Thanks again, and happy coding!
+
+_sips_ :coffee: _incessantly_
 
 ## So What Is This?
 
@@ -45,7 +53,7 @@ Either route you take, expect to learn at least something regarding the followin
 
 And that's it. Don't be too overwhelmed if you are! 
 
-The documentation on kurtrek.com will allow you to follow along and i'm here to assist you if you need any help!
+The documentation on [Kurtrek.com](https://kurtrek.com/ "Heading link") will allow you to follow along, and i'm here to assist you if you need any help!
 
 > Feel free to email me at _**fostkurt@gmail.com**_
 
