@@ -6,6 +6,8 @@
 
 # 
 
+NOTE: This project is still in the early stages
+
 First of all, I want to thank you for visiting this repository!
 
 I have a sign in page [[Kurtrek.com/signin](https://kurtrek.com/signin "Heading link")] which allows you to track your project progress. No subscription needed!
