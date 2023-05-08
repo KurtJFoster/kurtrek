@@ -8,10 +8,6 @@
 
 NOTE: I made this repo public on May 7th, 2023, which by no means is a reason to think everything works just yet! This project is still in the very early stages of development.
 
-First of all, I want to thank you for visiting this repository!
-
-I have a sign in page [[Kurtrek.com/signin](https://kurtrek.com/signin "Heading link")] which allows you to track your project progress. No subscription needed!
-
 ## So What Is This?
 
 At its core, it's an open source framework for enabling safe, over-the-internet control, of an automated system. 
