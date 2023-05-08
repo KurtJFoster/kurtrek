@@ -12,10 +12,6 @@ First of all, I want to thank you for visiting this repository!
 
 I have a sign in page [[Kurtrek.com/signin](https://kurtrek.com/signin "Heading link")] which allows you to track your project progress. No subscription needed!
 
-If you like what you see, don't forget to :star: this repo! Thanks again, and happy coding!
-
-_sips_ :coffee: _incessantly_
-
 ## So What Is This?
 
 At its core, it's an open source framework for enabling safe, over-the-internet control, of an automated system. 
