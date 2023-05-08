@@ -2,7 +2,7 @@
 # :herb: DIY Open-source Internet Connected Hydroponics :evergreen_tree:
 
 > #### Created By: [KurtJFoster](https://kfost.com/ "Heading link")
-> #### Docs Home Page: [Kurtrek.com](https://kurtrek.com/ "Heading link")
+> #### Home Page: [Kurtrek.com](https://kurtrek.com/ "Heading link") (I'm overhauling this website, i'll remove this message once completed)
 
 # 
 
