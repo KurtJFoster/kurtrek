@@ -6,7 +6,7 @@
 
 # 
 
-NOTE: This project is still in the early stages
+NOTE: I made this repo public on May 7th, 2023, which by no means is a reason to think everything works just yet! This project is still in the very early stages of development.
 
 First of all, I want to thank you for visiting this repository!
 
