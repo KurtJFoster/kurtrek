@@ -49,8 +49,6 @@ And that's it. Don't be too overwhelmed if you are!
 
 The documentation on [Kurtrek.com](https://kurtrek.com/ "Heading link") will allow you to follow along, and i'm here to assist you if you need any help!
 
-> Feel free to email me at _**fostkurt@gmail.com**_
-
 
 ## Resources
 
